@@ -4,7 +4,7 @@ const student = {
 	city:"Pune"
 };
 
-function getkeys(obj) {
+function getKeys(obj) {
     let arr = [];
     let key = Object.keys(obj);
     for(let i=0;i<key.length;i++){
@@ -13,4 +13,4 @@ function getkeys(obj) {
     console.log(arr);
 }
 
-getkeys(student);
+getKeys(student);
