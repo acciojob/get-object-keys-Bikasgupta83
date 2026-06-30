@@ -1,16 +1,11 @@
-const student = {
-	name: "Bikas",
-	age:22,
-	city:"Pune"
+Object.prototype.getKeys = function() {
+    return Object.keys(this);
 };
 
-function getKeys(obj) {
-    let arr = [];
-    let key = Object.keys(obj);
-    for(let i=0;i<key.length;i++){
-        arr.push(key[i]);
-    }
-    return arr;
-}
+const student = {
+    name: "Bikas",
+    age: 22,
+    city: "Pune"
+};
 
-getKeys(student);
+console.log(student.getKeys());
