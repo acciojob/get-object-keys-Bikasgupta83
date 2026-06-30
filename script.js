@@ -10,7 +10,7 @@ function getKeys(obj) {
     for(let i=0;i<key.length;i++){
         arr.push(key[i]);
     }
-    console.log(arr);
+    return arr;
 }
 
 getKeys(student);
