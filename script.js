@@ -1,10 +1,16 @@
-//your JS code here. If required.
 const student = {
 	name: "Bikas",
+	age:22,
+	city:"Pune"
 };
 
 function getkeys(obj) {
-	return Object.keys(name);
+    let arr = [];
+    let key = Object.keys(obj);
+    for(let i=0;i<key.length;i++){
+        arr.push(key[i]);
+    }
+    console.log(arr);
 }
 
-console.log(getkeys(student));
+getkeys(student);
